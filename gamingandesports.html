@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gaming & Esports Portal</title>
+    <link rel="stylesheet" href="style.css">  
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080b16;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: #111827;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 2px solid #00f5ff;
+}
+
+header h1 {
+    color: #00f5ff;
+    font-size: 32px;
+    text-shadow: 0 0 12px #00f5ff;
+}
+
+header p {
+    color: #aaa;
+}
+
+nav {
+    background: #161b2e;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00f5ff;
+    text-shadow: 0 0 10px #00f5ff;
+}
+
+.banner {
+    background: linear-gradient(135deg, #17123b, #004d61);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h2 {
+    color: #00f5ff;
+    font-size: 40px;
+    text-shadow: 0 0 15px #00f5ff;
+}
+
+.banner p {
+    font-size: 20px;
+    margin: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00f5ff;
+    color: #080b16;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background: #ff00ff;
+    color: white;
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #00f5ff;
+    margin-bottom: 30px;
+    text-shadow: 0 0 8px #00f5ff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: #161b2e;
+    border: 1px solid #00f5ff;
+    border-radius: 12px;
+    width: 230px;
+    padding: 30px 20px;
+    box-shadow: 0 0 10px #00f5ff33;
+    transition: 0.3s;
+}
+
+.card h3 {
+    color: #ff00ff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #ccc;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #00f5ff;
+    border-color: #ff00ff;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background: #161b2e;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #343b50;
+    text-align: center;
+}
+
+th {
+    background: #007c91;
+    color: white;
+}
+
+tr:hover {
+    background: #26334c;
+    color: #00f5ff;
+}
+
+footer {
+    background: #111827;
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #00f5ff;
+    color: #aaa;
+}
+
+footer h3 {
+    color: #00f5ff;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+    }
+
+    .banner h2 {
+        font-size: 26px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px 4px;
+    }
+}
+ </style>
+</head>
+<body>
+
+<header>
+    <h1>🎮 GAMEZONE ESPORTS</h1>
+    <p>Play • Compete • Win</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#games">Games</a>
+    <a href="#tournaments">Tournaments</a>
+    <a href="#teams">Teams</a>
+    <a href="#players">Players</a>
+    <a href="#leaderboard">Leaderboard</a>
+    <a href="#news">News</a>
+</nav>
+
+<section class="banner" id="home">
+    <h2>WELCOME TO GAMEZONE</h2>
+    <p>Enter the World of Gaming and Esports</p>
+    <a href="#tournaments" class="btn">Explore Tournaments</a>
+</section>
+
+<section id="games">
+    <h2>POPULAR GAMES</h2>
+    <div class="container">
+        <div class="card">
+            <h3>BGMI</h3>
+            <p>Battle Royale Gaming</p>
+        </div>
+        <div class="card">
+            <h3>FREE FIRE</h3>
+            <p>Survival Battle Game</p>
+        </div>
+        <div class="card">
+            <h3>VALORANT</h3>
+            <p>Strategic Shooting Game</p>
+        </div>
+        <div class="card">
+            <h3>CALL OF DUTY</h3>
+            <p>Action Multiplayer Game</p>
+        </div>
+    </div>
+</section>
+
+<section id="tournaments">
+    <h2>UPCOMING TOURNAMENTS</h2>
+    <table>
+        <tr>
+            <th>Tournament</th>
+            <th>Game</th>
+            <th>Date</th>
+            <th>Prize Pool</th>
+        </tr>
+        <tr>
+            <td>Champions Cup</td>
+            <td>BGMI</td>
+            <td>15 Nov 2026</td>
+            <td>₹50,000</td>
+        </tr>
+        <tr>
+            <td>Fire Masters</td>
+            <td>Free Fire</td>
+            <td>20 Nov 2026</td>
+            <td>₹30,000</td>
+        </tr>
+        <tr>
+            <td>Valorant League</td>
+            <td>Valorant</td>
+            <td>25 Nov 2026</td>
+            <td>₹40,000</td>
+        </tr>
+    </table>
+</section>
+
+<section id="teams">
+    <h2>TOP ESPORTS TEAMS</h2>
+    <div class="container">
+        <div class="card">
+            <h3>TEAM ALPHA</h3>
+            <p>Professional Gaming Team</p>
+        </div>
+        <div class="card">
+            <h3>TEAM DRAGON</h3>
+            <p>Esports Champions</p>
+        </div>
+        <div class="card">
+            <h3>TEAM PHOENIX</h3>
+            <p>Competitive Players</p>
+        </div>
+    </div>
+</section>
+
+<section id="players">
+    <h2>TOP PLAYERS</h2>
+    <div class="container">
+        <div class="card">
+            <h3>Shadow</h3>
+            <p>Rank: Pro Player</p>
+        </div>
+        <div class="card">
+            <h3>Blaze</h3>
+            <p>Rank: Expert Player</p>
+        </div>
+        <div class="card">
+            <h3>Hunter</h3>
+            <p>Rank: Master Player</p>
+        </div>
+    </div>
+</section>
+
+<section id="leaderboard">
+    <h2>GLOBAL LEADERBOARD</h2>
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Player Name</th>
+            <th>Team</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Shadow</td>
+            <td>Team Alpha</td>
+            <td>9800</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Blaze</td>
+            <td>Team Dragon</td>
+            <td>9200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Hunter</td>
+            <td>Team Phoenix</td>
+            <td>8700</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Ghost</td>
+            <td>Team Alpha</td>
+            <td>8100</td>
+        </tr>
+    </table>
+</section>
+
+<section id="news">
+    <h2>GAMING NEWS</h2>
+    <div class="container">
+        <div class="card">
+            <h3>New Game Updates</h3>
+            <p>Discover the latest gaming updates.</p>
+        </div>
+        <div class="card">
+            <h3>Esports Championship</h3>
+            <p>Exciting esports competitions are coming.</p>
+        </div>
+        <div class="card">
+            <h3>New Player Rankings</h3>
+            <p>Check out the latest player rankings.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h3>GAMEZONE ESPORTS</h3>
+    <p>© 2026 Gaming Community. All Rights Reserved.</p>
+    <p>Play Fair | Stay Connected | Keep Gaming</p>
+</footer>
+</body>
+</body>
+</html>
