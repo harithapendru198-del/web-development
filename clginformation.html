@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NRI College Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    line-height: 1.6;
+}
+
+header {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav {
+    background: #0077b6;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #023e8a;
+    border-radius: 5px;
+}
+
+.banner {
+    background: linear-gradient(120deg, #0077b6, #48cae4);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffb703;
+    color: #102a43;
+    padding: 12px 25px;
+    margin-top: 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+section {
+    padding: 45px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #023e8a;
+    margin-bottom: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 220px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000018;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    background: #caf0f8;
+}
+
+.admission {
+    width: 350px;
+    margin: auto;
+    text-align: left;
+}
+
+footer {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+    }
+
+    .banner h2 {
+        font-size: 27px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NRI COLLEGE</h1>
+    <p>Excellence in Education</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#departments">Departments</a>
+    <a href="#courses">Courses</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="banner" id="home">
+    <h2>Welcome to ABC College</h2>
+    <p>Your Future Begins Here!</p>
+    <a href="#admissions" class="btn">Apply Now</a>
+</div>
+
+<section id="about">
+    <h2>About Our College</h2>
+    <p>NRI College provides quality education and excellent opportunities for students.</p>
+</section>
+
+<section id="departments">
+    <h2>Our Departments</h2>
+    <div class="container">
+        <div class="card">Computer Science</div>
+        <div class="card">Electronics</div>
+        <div class="card">Mechanical</div>
+        <div class="card">Civil Engineering</div>
+    </div>
+</section>
+
+<section id="courses">
+    <h2>Our Courses</h2>
+    <div class="container">
+        <div class="card">B.Tech</div>
+        <div class="card">B.Sc</div>
+        <div class="card">B.Com</div>
+        <div class="card">MBA</div>
+    </div>
+</section>
+
+<section id="faculty">
+    <h2>Our Faculty</h2>
+    <div class="container">
+        <div class="card">
+            <h3>Dr. Ravi Kumar</h3>
+            <p>Computer Science Professor</p>
+        </div>
+        <div class="card">
+            <h3>Mrs. Priya</h3>
+            <p>Mathematics Professor</p>
+        </div>
+        <div class="card">
+            <h3>Mr. Suresh</h3>
+            <p>Electronics Professor</p>
+        </div>
+    </div>
+</section>
+
+<section id="admissions">
+    <h2>Admission Procedure</h2>
+    <div class="card admission">
+        <p>1. Fill the application form.</p>
+        <p>2. Submit required documents.</p>
+        <p>3. Complete admission process.</p>
+        <p>4. Pay the admission fee.</p>
+    </div>
+</section>
+
+<section id="facilities">
+    <h2>Campus Facilities</h2>
+    <div class="container">
+        <div class="card">Library</div>
+        <div class="card">Computer Lab</div>
+        <div class="card">Sports Ground</div>
+        <div class="card">Hostel</div>
+    </div>
+</section>
+
+<section id="events">
+    <h2>College Events</h2>
+    <div class="container">
+        <div class="card">Annual Day</div>
+        <div class="card">Sports Meet</div>
+        <div class="card">Technical Fest</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@abccollege.edu</p>
+    <p>Phone: 9876543210</p>
+    <p>Address: Andhra Pradesh, India</p>
+</section>
+
+<footer>
+    <p>© 2026 ABC College. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
